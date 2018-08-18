@@ -1,0 +1,119 @@
+INFO 2018-08-18 17:29:36,821 basehttp 124 "GET / HTTP/1.1" 200 1714
+WARNING 2018-08-18 17:29:36,879 base 152 Not Found: /favicon.ico
+WARNING 2018-08-18 17:29:36,881 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 1972
+ERROR 2018-08-18 17:33:12,144 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-08-18 17:33:12,359 basehttp 124 "GET / HTTP/1.1" 400 69216
+ERROR 2018-08-18 17:33:12,505 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-08-18 17:33:12,568 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 69275
+ERROR 2018-08-18 20:30:56,938 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-08-18 20:30:56,992 basehttp 124 "GET / HTTP/1.1" 400 69858
+ERROR 2018-08-18 20:30:57,120 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-08-18 20:30:57,239 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 69917
+WARNING 2018-08-18 21:28:30,438 base 152 Not Found: /mobiles/13212345678/count/
+WARNING 2018-08-18 21:28:30,438 basehttp 124 "GET /mobiles/13212345678/count/ HTTP/1.1" 404 2204
+WARNING 2018-08-18 21:28:32,630 base 152 Not Found: /mobiles/13212345678/count/
+WARNING 2018-08-18 21:28:32,636 basehttp 124 "GET /mobiles/13212345678/count/ HTTP/1.1" 404 2204
+ERROR 2018-08-18 21:28:32,777 exception 135 Internal Server Error: /sms_code/13212345678/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/sy8/meiduo8/meiduo_api/apps/verifications/views.py", line 24, in get
+    return Request({'message':'ok'})
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/request.py", line 159, in __init__
+    .format(request.__class__.__module__, request.__class__.__name__)
+AssertionError: The `request` argument must be an instance of `django.http.HttpRequest`, not `builtins.dict`.
+ERROR 2018-08-18 21:28:33,051 basehttp 124 "GET /sms_code/13212345678/ HTTP/1.1" 500 17741
+WARNING 2018-08-18 21:29:53,711 base 152 Not Found: /mobiles/13212345676/count/
+WARNING 2018-08-18 21:29:53,711 basehttp 124 "GET /mobiles/13212345676/count/ HTTP/1.1" 404 2204
+WARNING 2018-08-18 21:29:53,873 base 152 Not Found: /mobiles/13212345676/count/
+WARNING 2018-08-18 21:29:53,879 basehttp 124 "GET /mobiles/13212345676/count/ HTTP/1.1" 404 2204
+ERROR 2018-08-18 21:29:53,892 exception 135 Internal Server Error: /sms_code/13212345676/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/sy8/meiduo8/meiduo_api/apps/verifications/views.py", line 24, in get
+    return Request({'message':'ok'})
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/request.py", line 159, in __init__
+    .format(request.__class__.__module__, request.__class__.__name__)
+AssertionError: The `request` argument must be an instance of `django.http.HttpRequest`, not `builtins.dict`.
+ERROR 2018-08-18 21:29:53,970 basehttp 124 "GET /sms_code/13212345676/ HTTP/1.1" 500 17798
+WARNING 2018-08-18 21:31:20,026 base 152 Not Found: /mobiles/13212345676/count/
+INFO 2018-08-18 21:31:20,033 basehttp 124 "GET /sms_code/13212345676/ HTTP/1.1" 200 16
+WARNING 2018-08-18 21:31:20,037 basehttp 124 "GET /mobiles/13212345676/count/ HTTP/1.1" 404 2204
+ERROR 2018-08-18 21:36:13,919 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-08-18 21:36:13,965 basehttp 124 "GET / HTTP/1.1" 400 70336
+ERROR 2018-08-18 21:36:14,082 exception 80 Invalid HTTP_HOST header: 'www.meiduo.site:8000'. You may need to add 'www.meiduo.site' to ALLOWED_HOSTS.
+WARNING 2018-08-18 21:36:14,123 basehttp 124 "GET /favicon.ico HTTP/1.1" 400 70395
+WARNING 2018-08-18 21:37:45,920 base 152 Not Found: /mobiles/13112345678/count/
+WARNING 2018-08-18 21:37:45,921 basehttp 124 "GET /mobiles/13112345678/count/ HTTP/1.1" 404 2204
+WARNING 2018-08-18 21:37:48,966 base 152 Not Found: /mobiles/13112345678/count/
+WARNING 2018-08-18 21:37:49,049 basehttp 124 "GET /mobiles/13112345678/count/ HTTP/1.1" 404 2204
+ERROR 2018-08-18 21:37:49,061 exception 135 Internal Server Error: /sms_code/13112345678/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/django_py3/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/sy8/meiduo8/meiduo_api/apps/verifications/views.py", line 26, in get
+    redis_pl.excute()
+AttributeError: 'StrictPipeline' object has no attribute 'excute'
+ERROR 2018-08-18 21:37:49,107 basehttp 124 "GET /sms_code/13112345678/ HTTP/1.1" 500 17501
+WARNING 2018-08-18 21:38:32,136 base 152 Not Found: /mobiles/13112345678/count/
+WARNING 2018-08-18 21:38:32,146 basehttp 124 "GET /mobiles/13112345678/count/ HTTP/1.1" 404 2204
+WARNING 2018-08-18 21:38:32,149 basehttp 124 "GET /sms_code/13112345678/ HTTP/1.1" 400 37
+WARNING 2018-08-18 21:40:00,409 base 152 Not Found: /mobiles/13112345678/count/
+WARNING 2018-08-18 21:40:00,423 basehttp 124 "GET /mobiles/13112345678/count/ HTTP/1.1" 404 2204
+INFO 2018-08-18 21:40:00,426 basehttp 124 "GET /sms_code/13112345678/ HTTP/1.1" 200 16
+WARNING 2018-08-18 21:40:59,996 base 152 Not Found: /mobiles/13112345678/count/
+WARNING 2018-08-18 21:41:00,001 basehttp 124 "GET /sms_code/13112345678/ HTTP/1.1" 400 37
+WARNING 2018-08-18 21:41:00,007 basehttp 124 "GET /mobiles/13112345678/count/ HTTP/1.1" 404 2204
+WARNING 2018-08-18 21:41:05,133 base 152 Not Found: /mobiles/13112345676/count/
+WARNING 2018-08-18 21:41:05,137 basehttp 124 "GET /mobiles/13112345676/count/ HTTP/1.1" 404 2204
+WARNING 2018-08-18 21:41:05,278 base 152 Not Found: /mobiles/13112345676/count/
+WARNING 2018-08-18 21:41:05,279 basehttp 124 "GET /mobiles/13112345676/count/ HTTP/1.1" 404 2204
+INFO 2018-08-18 21:41:05,287 basehttp 124 "GET /sms_code/13112345676/ HTTP/1.1" 200 16
+WARNING 2018-08-18 21:41:09,488 base 152 Not Found: /mobiles/13112345674/count/
+WARNING 2018-08-18 21:41:09,489 basehttp 124 "GET /mobiles/13112345674/count/ HTTP/1.1" 404 2204
+INFO 2018-08-18 21:41:09,616 basehttp 124 "GET /sms_code/13112345674/ HTTP/1.1" 200 16
+WARNING 2018-08-18 21:41:09,617 base 152 Not Found: /mobiles/13112345674/count/
+WARNING 2018-08-18 21:41:09,617 basehttp 124 "GET /mobiles/13112345674/count/ HTTP/1.1" 404 2204
